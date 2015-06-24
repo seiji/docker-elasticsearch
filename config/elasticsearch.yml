@@ -74,3 +74,10 @@ index:
                    synonym,
                    stopword
                ]
+            keyword:
+                type: custom
+                tokenizer: keyword
+                char_filter: [html_strip]
+                filter": [
+                    cjk_width, lowercase
+                ]
