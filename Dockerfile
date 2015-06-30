@@ -75,14 +75,9 @@ ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 # ADD config/synonym.txt /elasticsearch/config/synonym.txt
 # ADD config/userdict_ja.txt /elasticsearch/config/userdict_ja.txt
 
-# Define working directory.
 WORKDIR /data
 
-# Define default command.
 CMD ["/elasticsearch/bin/elasticsearch"]
 
-# Expose ports.
-#   - 9200: HTTP
-#   - 9300: transport
 EXPOSE 9200
 EXPOSE 9300
