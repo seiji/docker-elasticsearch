@@ -71,9 +71,9 @@ RUN /elasticsearch/bin/plugin --install mobz/elasticsearch-head
 VOLUME ["/data"]
 
 ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
-# ADD config/stopword.txt /elasticsearch/config/stopword.txt
-# ADD config/synonym.txt /elasticsearch/config/synonym.txt
-# ADD config/userdict_ja.txt /elasticsearch/config/userdict_ja.txt
+ADD config/stopword.txt /elasticsearch/config/stopword.txt
+ADD config/synonym.txt /elasticsearch/config/synonym.txt
+ADD config/userdict_ja.txt /elasticsearch/config/userdict_ja.txt
 
 WORKDIR /data
 
